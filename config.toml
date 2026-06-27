@@ -1,0 +1,30 @@
+[raw_image]
+version = "1.0.0"
+ext = "raw nef nrw cr3 cr2 crw tif arw"  # nikon, canon, sony
+[raw_image.config]
+
+[stl]
+version = "1.0.0"
+ext = "stl"
+[stl.config]
+viewer = ""
+facecolors = ""
+edgecolors = "black"
+backgroundcolors = ""
+
+[xpm]
+version = "1.0.0"
+ext = "stl"
+[xpm.config]
+
+[bokeh]
+version = "1.0.0"
+
+[cv2]
+version = "1.0.0"
+
+[plotly]
+version = "1.0.0"
+
+[sixel]
+version = "1.0.0"

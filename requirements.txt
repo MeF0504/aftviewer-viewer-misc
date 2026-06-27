@@ -1,0 +1,5 @@
+rawpy
+numpy-stl
+plotly
+bokeh
+opencv-python
