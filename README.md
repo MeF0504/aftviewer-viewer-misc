@@ -7,7 +7,7 @@ See [requirements.txt](./requirements.txt)
 
 ### Install
 ```
-aftviewer - libinstall 
+aftviewer - libinstall https://github.com/MeF0504/aftviewer-viewer-misc.git
 ```
 
 ### License
