@@ -17,6 +17,10 @@ version = "1.0.0"
 ext = "stl"
 [xpm.config]
 
+[json]
+version = "1.0.0"
+ext = "json"
+
 [bokeh]
 version = "1.0.0"
 
