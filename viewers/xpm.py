@@ -5,7 +5,6 @@ import argparse
 
 from aftviewer import (GLOBAL_CONF, Args, show_image_ndarray, help_template,
                        add_args_imageviewer)
-from pymeflib import xpm_loader
 from pymeflib.xpm_loader import XPMLoader
 logger = getLogger(GLOBAL_CONF.logname)
 if 'numpy' in GLOBAL_CONF.pack_list:
@@ -27,8 +26,10 @@ def show_help():
 
 def main(fpath: Path, args: Args) -> int:
     if args.make:
-        xpm_loader._update_lib = True
-    xpm = XPMLoader(fpath, logger=logger)
+        update = True
+    else:
+        update = False
+    xpm = XPMLoader(fpath, logger=logger, update=update)
     if use_numpy:
         xpm.xpm_to_ndarray()
         data = xpm.ndarray
